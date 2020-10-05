@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Jugando con variables</title>
+	<link rel="stylesheet" href="css/micss2.css">
+
+</head>
+
+<body>
+	<div class="contenedor">
+		<div class="header">
+			<p class="logo">Curso JavaScript Píldoras Informáticas</p>
+		</div>
+		<div class="contenido">
+			<div class="principal">
+				<h1>Jugando con las variables</h1>
+				<input type="button" name="boton" value="" id="boton1">
+				<script type="text/javascript">
+					var nombre=prompt('Nombre: ');
+					var apellido=prompt('apellido');
+					var aray=[];
+					var miboton=document.getElementById('boton1');
+					//isNaN no es un numero
+
+					miboton.style.width="100px"
+
+					document.write("<p>");
+					document.write("Bienvenido:" + nombre + " " + apellido);
+					document.write("</p>");
+
+					aray.unshift('agrega un elemento al aray al inicio');
+					aray.push('agrega un elemento al aray al final');
+				</script>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

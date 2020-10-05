@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style media="screen">
+      .inicio{
+        width: 0%
+      }
+      .final{
+        width: 100%
+      }
+      .animacion{
+        transition: all 3s ease .2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container text-center py-5">
+      <h1 id='titulo' class="display-3 py-5">Cambiando este texto</h1>
+      <div id="barra" class="progress-bar progress-bar-striped py-2 inicio animacion" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+      <button id="button" class="btn btn-danger my-2">Haz clic y ve mi poder</button>
+    </div>
+
+
+    <script type="text/javascript">
+        document.getElementById('button').onclick = function() {f1()};
+        function f1(){
+          document.getElementById('titulo').innerHTML = 'Aja te cambie';
+          document.getElementById('titulo').classList.add("bg-danger");
+          document.getElementById('barra').classList.toggle("progress-bar-animated");
+          document.getElementById('barra').classList.toggle("final");
+        }
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- JavaScript propio -->
+    <!-- <script type="text/javascript" src="javascript.js"></script> -->
+  </body>
+</html>
